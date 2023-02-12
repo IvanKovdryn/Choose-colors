@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 50px 0;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #eeeeee;
+}
+.title {
+  padding: 5px 20px;
+}
+.change-color-mobile {
+  display: none;
+  text-align: end;
+  margin: 75px 0 0;
+}
+.change-color-mobile p {
+  text-align: end;
+  background: #8f4545;
+  color: #ffffff;
+  display: inline;
+  padding: 15px;
+  border-radius: 9px;
+}
+.change-color-mobile p:hover {
+  background: #c56565;
+}
+.wrapper {
+  display: flex;
+  margin: 40px 100px;
+  border-radius: 50px;
+  overflow: hidden;
+  flex: 1 0 auto;
+  box-shadow: 0px 0px 20px -10px #000;
+}
+.col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.col h2 {
+  padding: 15px 25px;
+  color: #fff;
+  border-radius: 10px;
+  transition: all 0.1s ease;
+}
+.col h2:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.col button {
+  outline: none;
+  border: none;
+  background: transparent;
+  font-size: 30px;
+  padding: 15px;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+.col button:hover {
+  color: #c6c6c6;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.fa-solid {
+  pointer-events: none;
+}
+@media (max-width: 1150px) {
+  .wrapper {
+    margin: 50px 75px;
+    border-radius: 40px;
+  }
+  .col h2 {
+    font-size: 17px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  .col button {
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 7px;
+  }
+}
+@media (max-width: 700px) {
+  .wrapper {
+    margin: 75px 20px;
+    border-radius: 30px;
+  }
+  .col h2 {
+    font-size: 12px;
+    padding: 10px 5px;
+    border-radius: 5px;
+  }
+  .col button {
+    font-size: 15px;
+    padding: 7px;
+    border-radius: 7px;
+  }
+}
+@media (max-width: 425px) {
+  .change-color-mobile {
+    display: block;
+  }
+  .change-color {
+    display: none;
+  }
+  .title {
+    font-size: 14px;
+  }
+}
